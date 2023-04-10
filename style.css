@@ -1,0 +1,1265 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Salsa';
+}
+a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 400;
+}
+/* Header */
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 12%;
+    width: 100%;
+    padding: 10px 30px;
+    background-color: #313536;
+    z-index: 999;
+    position: fixed;
+}
+
+header .logo a{
+    /* padding: 0px 20px; */
+    display:flex;
+    align-items: center;
+}
+header .logo .Logo-text{
+    color: #fff;
+    line-height: 54px;
+    font-size: 34px;
+    margin-left: 9px;
+}
+
+header .navbar ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+header .navbar li{
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+}
+header .navbar li a{
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 31px;
+    color: #ffffff;
+    font-family: 'DM Sans';
+    transition: 0.3s ease;
+}
+header .navbar li a:hover{
+    color: #00E472;
+}
+header .navbar li a:hover::after{
+    content: "";
+    width: 30%;
+    height: 2px;
+    background: #00E472;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+}
+header .btn  a{
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 31px;
+    padding: 12px 30px;
+    color: #fff;
+    background: #00E472;
+    border-radius: 10px;
+}
+header .btn a:hover{
+  background: #30c078;;
+}
+
+#mobile{
+    display: none;
+    align-items: center;
+}
+#close{
+    display: none;
+}
+
+
+
+
+
+/* Home Section */
+
+.section-1{
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    background-color: #252829;
+    overflow: hidden;
+    height: 100%;
+    padding-top: 6%;
+}
+.section-1 .details{
+    width: 60%;
+    margin-left: 8%;
+    padding-top: 10%;
+}
+.section-1 .details h1{
+    width: 80%;
+    font-size: 52px;
+    font-weight: 400;
+    color: #FFFFFF;
+    line-height: 64px;
+}
+.section-1 .details p{
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 39px;
+    margin-top: 4%;
+    color: #808080;
+}
+
+.section-1 .details .btns{
+    margin: 5% 0;
+}
+.section-1 .details button,
+.section-1 .details button a{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 25px;
+    width: 180px;
+    height: 50px;
+    border-radius: 38px;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+.section-1 .details .btns .btn1{
+    color: #FFFFFF;
+    background: #00E472;
+    border: none;
+}
+.section-1 .details .btns .btn1:hover{
+    background-color: #252829;
+    border: 3px solid #00E472;
+}
+.section-1 .details .btns .btn2{
+    margin-left: 3%;
+    color: #FFFFFF;
+    background-color: #252829;
+    border: 3px solid #00E472;
+}
+.section-1 .details .btns .btn2:hover{
+    background-color: #00E472;
+    color: #FFFFFF;
+}
+
+.section-1 .image{
+    width: 40%;
+    overflow: hidden;
+}
+.section-1 .image img{
+    float: left;
+    border-radius: 50%;
+    height: 660px;
+    margin:-2% 0 0 0;
+}
+
+
+
+/* About me section */
+
+.section-2{
+    background: #313536;
+}
+.section-2 .profile{
+    margin: 0 5%;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+}
+.section-2 .profile .profile-image{
+    width: 35%;
+    padding: 2%;
+}
+.section-2 .profile .profile-image img{
+    width: 100%;
+    /* margin: 10%; */
+}
+.section-2 .profile .about{
+    width: 65%;
+    margin-left: 5%;
+    height: 100%;
+}
+
+.section-2 .profile .about h3{
+    text-transform: uppercase;
+    color: #00E472;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 40px;
+    letter-spacing: 0.13em;
+    margin-top: 10%;
+}
+.section-2 .profile .about h1{
+    font-weight: 400;
+    font-size: 45px;
+    line-height: 56px;
+    color: #FFFFFF;
+    margin-bottom: 5%;
+}
+.section-2 .profile .about p{
+    color: #ABAEB0;
+    width: 80%;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 33px;
+}
+
+
+
+/* Skills section */
+
+.section-3{
+    background: #252829;
+    color: #fff;
+    padding: 8%;
+    display: flex;
+ }
+ .section-3 .left{
+     width: 60%;
+ }
+ .section-3 .left h2{
+     width: 85%;
+     font-weight: 400;
+     font-size: 62px;
+     line-height: 77px;
+     color: #FFFFFF;
+     margin-bottom: 5%;
+ }
+ .section-3 .left p{
+     width: 80%;
+     font-weight: 400;
+     font-size: 25px;
+     line-height: 33px;
+     color: #ABAEB0;
+ }
+ 
+ .section-3 .right{
+     width: 40%;
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: center;
+ }
+ .section-3 .right .skill{
+     margin: 3% 7%;
+     position: relative;
+ }
+ .section-3 .right .skill .outer{
+     height: 160px;
+     width: 160px;
+     border-radius: 50%;
+     padding: 20px;
+     background: #DDDDDD;
+ }
+ .section-3 .right .skill .outer .inner{
+     height: 120px;
+     width: 120px;
+     border-radius: 50%;
+     /* border: 1px solid blue; */
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     background-color: #252829;
+ }
+ .section-3 .right .skill .outer .inner .number{
+     font-weight: 800;
+     color: #FFFFFF;
+     font-weight: 400;
+     font-size: 25px;
+     line-height: 33px;
+ }
+ .section-3 .right .skill .outer svg{
+     position: absolute;
+     top: 0;
+     left: 0;
+ }
+ .section-3 .right .skill .outer svg circle{
+     fill: none;
+     stroke-width: 20px;
+     stroke: #0acf83;
+     stroke-dasharray: 472;
+     stroke-dashoffset: 472;
+ }
+ 
+ .section-3 .right .skill-1 .outer svg circle{
+     animation:  anim-1 2s linear forwards;
+     -webkit-animation:  anim-1 2s linear forwards;
+ }
+ @keyframes anim-1{
+     100%{
+         stroke-dashoffset: 85;
+     }
+ }
+ .section-3 .right .skill-2 .outer svg circle{
+     animation:  anim-2 2s linear forwards;
+     -webkit-animation:  anim-2 2s linear forwards;
+ }
+ @keyframes anim-2{
+     100%{
+         stroke-dashoffset: 55;
+     }
+ }
+ .section-3 .right .skill-3 .outer svg circle{
+     animation:  anim-3 2s linear forwards;
+     -webkit-animation:  anim-3 2s linear forwards;
+ }
+ @keyframes anim-3{
+     100%{
+         stroke-dashoffset: 185;
+     }
+ }
+ .section-3 .right .skill-4 .outer svg circle{
+     animation:  anim-4 2s linear forwards;
+     -webkit-animation:  anim-4 2s linear forwards;
+ }
+ @keyframes anim-4{
+     100%{
+         stroke-dashoffset: 105;
+     }
+ }
+
+
+
+
+ /* Education section */
+
+ .section-4{
+    background-color: #313536;
+    display: flex;
+}
+.section-4 .left{
+    background-color: #313536;
+    padding: 0 0 3% 8%;
+    width: 60%;
+}
+.section-4 .left .pre{
+    color: #00E472;
+    padding-bottom: 5%;
+}
+.section-4 .left .pre p{
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 26px;
+    letter-spacing: 0.13em;
+    text-transform: uppercase;
+    color: #00E472;
+    padding: 4% 0 2% 0;
+}
+.section-4 .left .pre h2{
+    font-weight: 400;
+    font-size: 45px;
+    line-height: 56px;
+    color: #FFFFFF;
+}
+.section-4 .left .content{
+    padding: 0 30px;
+    border-left: 2px solid #00E472;
+}
+.section-4 .left .content .box{
+    position: relative;
+    cursor: pointer;
+    transition: all 0.4s;
+    margin-bottom: 20px;
+}
+/* .left .content .box:hover{
+    box-shadow: 0px 3px 12px 0px #ccc;
+    border: 1px solid transparent;
+} */
+.section-4 .left .content .box::before{
+    content: '';
+    position: absolute;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    right: calc(100% + 22px);
+    top: 0;
+    background-color: #00E472;
+    border: 5px solid #252829;
+    box-shadow: 0px 0px 1px 3px #00E472;
+}
+.section-4 .left .content .box h3{
+    position: relative;
+    color: #00E472;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 31px;
+    padding-bottom: 1%;
+}
+.section-4 .left .content .box h1{
+    color: #FFFFFF;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 40px;
+}
+.section-4 .left .content .box p{
+    width: 50%;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+    color: #ABAEB0;
+}
+.section-4 .right{
+    width: 40%;
+    padding: 7% 10% 3% 0;
+    background-color: #313536;
+}
+.section-4 .right img{
+    width:  100%;
+    /* margin: 12%; */
+}
+
+
+
+
+/* About Development */
+
+.section-5{
+    background-color: #252829;
+    text-align: center;
+    padding: 5% 8%;
+}
+.section-5 .more,
+.section-7 .more{
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 26px;
+    letter-spacing: 0.13em;
+    text-transform: uppercase;
+    color: #00E472;
+    padding-bottom: 3%;
+}
+.section-5 h1,
+.section-7 h1{
+    font-weight: 400;
+    font-size: 45px;
+    line-height: 56px;
+    color: #FFFFFF;
+    margin-bottom: 5%;
+}
+.section-5 .cards{
+    display: flex;
+    justify-content: space-between;
+}
+
+.section-5 .cards .card{
+    width: 358px;
+    height: 338px;
+    border: 2px solid #00E472;
+    border-radius: 15px;
+    justify-content: center;
+    text-align: center;
+}
+.section-5 .cards .card .icon{
+    width: 100px;
+    height: 100px;
+    background: rgba(0, 228, 114, 0.2);
+    border-radius: 15px;
+    margin: 5% auto;
+    position: relative;
+}
+.section-5 .cards .card .icon img{
+    position: absolute;
+    top: 20px;
+    left: 19px;
+}
+.section-5 .cards .card .text{
+    margin: 7%;
+}
+.section-5 .cards .card .text h2{
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 32px;
+    color: #FFFFFF;
+    padding-bottom: 4%;
+}
+.section-5 .cards .card .text p{
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+    color: #ABAEB0;
+}
+
+
+
+/*  Numerical data of projects and awards  */
+
+.section-6{
+    background-color: #313536;
+    padding: 5% 8%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.section-6 .group{
+    /* width: 200px; */
+    /* height: 300px; */
+    /* border: 2px solid #00E472; */
+    border-radius: 15px;
+    justify-content: center;
+    text-align: center;
+}
+.section-6 .group .icon {
+    width: 99px;
+    height: 99px;
+    background: rgba(0, 228, 114, 0.2);
+    border-radius: 62px;
+    margin: 5% auto;
+    position: relative;
+}
+.section-6 .group .icon img{
+    position: absolute;
+    top: 26%;
+    left: 26%;
+}
+.section-6 .group .number h3{
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 62px;
+    text-align: center;
+    color: #FFFFFF;
+}
+.section-6 .group .name h3{
+    font-weight: 400;
+    font-size: 37px;
+    line-height: 46px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+
+
+
+/*Clients testimonials  */
+
+.section-7{
+    background-color: #252829;
+    padding: 5% 8%;
+}
+.section-7 .clients{
+    display: flex;
+    justify-content: space-between;
+}
+.section-7 .clients .client{
+    width: 358px;
+    height: 338px; 
+    /* margin: 0 5%; */
+    border: 2px solid #00E472;
+    border-radius: 15px;
+    background: url(./Vector.svg)no-repeat;
+    background-position: 70% 87%;
+}
+.section-7 .clients .client .info{
+    display: flex;
+    margin: 8% 10%;
+}
+.section-7 .clients .client .info .img img{
+    border-radius: 53px;
+    width: 80px;
+    height: 80px;
+    background: rgba(0, 228, 114, 0.2);
+}
+.section-7 .clients .client .info .name{
+    margin-left: 4%;
+}
+.section-7 .clients .client .info .name h3{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0.13em;
+    text-transform: uppercase;
+    color: #00E472;
+    padding: 8% 0;
+}
+.section-7 .clients .client .info .name h2{
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 27px;
+    color: #FFFFFF;
+}
+.section-7 .clients .client .text{
+    margin: 15% 8%;
+}
+.section-7 .clients .client .text p{
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+    color: #ABAEB0;
+}
+
+
+
+
+
+/* Contact form */
+
+
+.section-8{
+    background: #313536;
+    text-align: center;
+}
+.section-8 p{
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 26px;
+    letter-spacing: 0.13em;
+    text-transform: uppercase;
+    color: #00E472;
+    padding: 2% 0;
+}
+.section-8 h2{
+    text-align: center;
+    color: #FFFFFF;
+    font-weight: 400;
+    font-size: 45px;
+    line-height: 56px;
+}
+.section-8 form{
+    width: 50%;
+    margin: 0 auto;
+}
+.section-8 form label {
+    display: flex;
+    margin: 20px 0 4px 0;
+    color: #ABAEB0;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 33px;
+}
+.section-8 form input ,
+.section-8 textarea{
+    width: 100%;
+    padding: 20px;
+    border: 3px solid #00E472;
+    background-color: #313536;
+    border-radius: 20px;
+}
+.section-8 form input{
+    height: 50px;
+    width: 100%;
+    outline: none;
+}
+.section-8 form input::placeholder,
+.section-8 textarea{
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 33px;
+    color: #ABAEB0;
+    outline: none;
+}
+.section-8 form input[type=text],
+.section-8 form input[type=email]{
+    color: #00E472;
+    font-size: 25px;
+}
+.section-8 form button,
+.section-8 form button a {
+    width: 230px;
+    height: 60px;
+    background: #00E472;
+    border-radius: 38px;
+    margin: 3% 0;
+    outline:none;
+    border: none;
+    cursor: pointer;
+}
+.section-8 form button a{
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 33px;
+    outline: none;
+}
+.section-8 form button:hover{
+    box-shadow: 0px 2px 12px 0px #00E472;
+}
+
+
+
+
+/* footer */
+
+footer{
+    background-color: #252829;
+    height: 50px;
+    text-align: center;
+}
+footer p{
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 50px;
+    color: #ABAEB0;
+}
+
+
+
+
+
+
+/* Media queries */
+
+@media (min-width: 360px) and (max-width:640px) {
+    header {
+        height: 10%;
+        padding: 10px 10px;
+    }
+    .header .logo img{
+        height: 40px;
+    }
+    header .logo .Logo-text {
+        line-height: 40px;
+        font-size: 25px;
+    }
+
+    .header #navbar {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: fixed;
+        top: 0;
+        right: -300px;
+        height: 100vh;
+        width: 300px;
+        background-color: #E3E6F3;
+        box-shadow: 0 40px 60px rgba(0,0,0,0.1);
+        padding: 80px 0 0  10px;
+        transition: 0.3s;
+    }
+    #navbar.active{
+        right: 0px;
+        background-color: #313536;
+    }
+
+    #navbar li{
+        margin-bottom: 25px;
+    }
+    .header .btn{
+        display: none;
+    }
+    #mobile{
+        display: flex;
+        align-items: center;
+        margin-right: 5%;
+    }
+    #mobile i,
+    #mobile a>i{
+        color: #00E472;
+        font-size: 30px;
+        padding-left: 20px;
+    }
+    #close{
+        display: initial;
+        position: absolute;
+        top: 30px;
+        left: 30px;
+        color: #00E472;
+        font-size: 24px;
+    }
+ 
+
+
+
+
+
+
+
+    .section-1 {
+        padding-top: 12%;
+    }
+    .section-1 .details {
+        width: 60%;
+        margin-left: 7%;
+        padding-top: 14%;
+    }
+    .section-1 .details h1 {
+        font-size: 30px;
+        line-height: 40px;
+    }
+    .section-1 .details p {
+        font-size: 16px;
+        line-height: 21px;
+        margin-top: 7%;
+    }
+    /* .section-1 .details button, .section-1 .details button a {
+        width: 120px;
+        height: 40px;
+        margin: 0 5% 0 0;
+    } */
+    .section-1 .image img {
+        height: 458px;
+        margin: -8% 0 0 3%;
+    }
+    .section-1 .details button, .section-1 .details button a {
+        width: 42%;
+        height: 40px;
+        margin: 5% 3%;
+    }
+    .section-1 .details button, .section-1 .details button a {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 16px;
+    }
+
+    .section-2 .profile {
+        margin: 0 3%;
+        display: block;
+    }
+    .section-2 .profile .profile-image {
+        width: 100%;
+        padding: 15%;
+    }
+    .section-2 .profile .about {
+        width: 100%;
+        margin: 0% 5%;
+        padding: 5% 0;
+    }
+    .section-2 .profile .about h3 {
+        font-size: 18px;
+        line-height: 32px;
+        letter-spacing: 0.09em;
+        margin-top: 0%;
+    }
+    .section-2 .profile .about h1 {
+        font-size: 40px;
+        line-height: 45px;
+        margin-bottom: 3%;
+    }
+    .section-2 .profile .about p {
+        font-size: 20px;
+        line-height: 28px;
+    }
+
+    .section-3 {
+        display: block;
+    }
+    .section-3 .left {
+        width: 100%;
+    }
+    .section-3 .left h2 {
+        width: 100%;
+        font-size: 56px;
+        line-height: 63px;
+        margin-bottom: 5%;
+    }
+    .section-3 .left p {
+        width: 95%;
+        padding-bottom: 5%;
+        font-size: 20px;
+        line-height: 30px;
+    }
+    .section-3 .right {
+        width: 100%;
+    }
+
+    .section-4 {
+        display: block;
+    }
+    .section-4 .left {
+        width: 100%;
+    }
+    .section-4 .left .pre p {
+        font-size: 18px;
+        letter-spacing: 0.08em;
+    }
+    .section-4 .left .pre h2 {
+        font-size: 40px;
+        line-height: 50px;
+    }
+    .section-4 .left .content .box h3 {
+        font-size: 16px;
+        line-height: 20px;
+    }
+    .section-4 .left .content .box h1 {
+        font-size: 25px;
+        line-height: 33px;
+    }
+    .section-4 .left .content .box p {
+        width: 100%;
+        font-size: 18px;
+    }
+    .section-4 .right {
+        width: 100%;
+        padding: 7% 15%;
+    }
+
+
+
+    /* section-5 */
+    .section-5 .more, .section-7 .more {
+        font-size: 18px;
+        letter-spacing: 0.08em;
+    }
+    .section-5 h1, .section-7 h1 {
+        font-size: 40px;
+        line-height: 47px;
+    }
+    .section-5 .cards {
+        display: block;
+    }
+    .section-5 .cards .card {
+        margin: 5% auto;
+        width: 320px;
+        height: 320px;
+    }
+    .section-5 .cards .card .icon {
+        margin: 3% auto;
+        width: 80px;
+        height: 80px;
+    }
+    .section-5 .cards .card .icon img {
+        height: 46px;
+        top: 18%;
+        left: 10%;
+    }
+    .section-5 .cards .card .text h2 {
+        font-size: 30px;
+        line-height: 36px;
+    }
+
+
+    /* section-6 */
+    .section-6 {
+        display: block;
+    }
+    .section-6 .group .number h3 {
+        font-size: 40px;
+        line-height: 50px;
+    }
+    .section-6 .group .name h3 {
+        font-size: 45px;
+        line-height: 48px;
+    }
+    
+
+    /* section-7 */
+    .section-7 .clients {
+        display: block;
+    }
+    .section-7 .clients .client {
+        margin: 5% auto;
+    }
+    .section-7 .clients .client .text {
+        margin: 11% 7%;
+    }
+
+    .section-8 p {
+        font-size: 18px;
+        line-height: 26px;
+        letter-spacing: 0.08em;
+    }
+    .section-8 h2 {
+        font-size: 40px;
+        line-height: 50px;
+    }
+    .section-8 form {
+        width: 75%;
+    }
+    .section-8 form label {
+        margin: 20px 0 6px 0;
+        font-size: 21px;
+        line-height: 28px;
+    }
+    .section-8 form input {
+        height: 40px;
+    }
+    .section-8 form input, .section-8 textarea {
+        padding: 12px;
+        border: 2px solid #00E472;
+    }
+    .section-8 form input::placeholder, .section-8 textarea {
+        font-size: 18px;
+        line-height: 29px;
+    }
+    .section-8 form button, .section-8 form button a {
+        width: 140px;
+        height: 40px;
+    }
+    .section-8 form button a {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 28px;
+    }
+
+    footer {
+        height: 40px;
+    }
+    footer p {
+        font-size: 18px;
+        line-height: 44px;
+    }
+}
+
+
+
+
+@media (min-width:768px) and (max-width: 1366px){
+    header{
+        height: 10%;
+    }
+    .header .logo img{
+        height: 40px;
+    }
+    header .logo .Logo-text {
+        line-height: 23px;
+        font-size: 18px;
+        font-size: 500;
+    }
+    header .navbar li {
+        padding: 0 10px;
+    }
+    header .navbar li a {
+        font-size: 21px;
+        font-weight: 500;
+    }
+
+    header .btn  a {
+        font-size: 20px;
+        font-weight: 500;
+        padding: 8px 16px;
+    }
+
+    .section-1 .details {
+        margin-left: 4%;
+        padding-top: 12%;
+    }
+    .section-1 .details h1 {
+        width: 100%;
+        font-size: 48px;
+        line-height: 56px;
+    }
+    .section-1 .details p {
+        font-size: 25px;
+        line-height: 35px;
+        margin-top: 9%;
+    }
+    .section-1 .details button, .section-1 .details button a {
+        width: 170px;
+        height: 43px;
+    }
+    
+    .section-2 .profile .about h3 {
+        font-size: 18px;
+        line-height: 24px;
+        margin-top: 5%;
+    }
+    .section-2 .profile .about h1 {
+        font-size: 40px;
+        line-height: 58px;
+    }
+    .section-2 .profile {
+        padding: 2% 0%;
+    }
+    .section-2 .profile .profile-image img {
+        margin: 10% 1%;
+    }
+    .section-2 .profile .about p {
+        font-size: 18px;
+        line-height: 25px;
+        width: 100%;
+    }
+    
+    .section-3 {
+        padding: 5%;
+        display: block;
+    }
+    .section-3 .left {
+        width: 100%;
+    }
+    .section-3 .left h2 {
+        width: 100%;
+        font-size: 56px;
+        line-height: 67px;
+    }
+    .section-3 .left p {
+        width: 100%;
+        font-size: 23px;
+        line-height: 33px;
+    }
+    .section-3 .right {
+        width: 100%;
+    }
+    .section-3 .right .skill {
+        margin: 2% 13%;
+    }
+
+    /* .section-4 {
+        display: block;
+    }
+    .section-4 .left {
+        padding: 2% 4% 3% 8%;
+        width: 100%;
+    }
+    .section-4 .left .pre {
+        padding-bottom: 3%;
+    }
+    .section-4 .left .pre p {
+        font-size: 18px;
+        padding: 3% 0 2% 0;
+    }
+    .section-4 .left .pre h2 {
+        font-size: 40px;
+        line-height: 47px;
+    }
+    .section-4 .left .content .box h3 {
+        font-size: 20px;
+        line-height: 24px;
+        padding-bottom: 2%;
+    }
+    .section-4 .left .content .box p {
+        width: 90%;
+    } */
+
+    .section-4 .left{
+        width: 50%;
+    }
+    .section-4 .left .pre p {
+        font-size: 18px;
+        line-height: 23px;
+        padding: 4% 0 2% 0;
+    }
+    .section-4 .left .pre h2 {
+        font-size: 40px;
+        line-height: 50px;
+    }
+    .section-4 .left .content {
+        padding: 0 0px 0 30px;
+    }
+    .section-4 .left .content .box h3 {
+        line-height: 25px;
+    }
+    .section-4 .left .content .box h1 {
+        font-size: 25px;
+        line-height: 33px;
+    }
+    .section-4 .left .content .box p {
+        width: 91%;
+        font-size: 18px;
+        line-height: 26px;
+    }
+    .section-4 .right {
+        width: 50%;
+        padding: 8% 5%;
+    }
+    .section-5 {
+        padding: 3% 4%;
+    }
+    .section-5 .more, .section-7 .more {
+        font-size: 18px;
+        line-height: 23px;
+    }
+    .section-5 h1, .section-7 h1 {
+        font-size: 40px;
+        line-height: 45px;
+        margin-bottom: 3%;
+    }
+    .section-5 .cards .card {
+        margin: 1%;
+    }
+    .section-5 .cards .card .icon {
+        width: 75px;
+        height: 75px;
+    }
+    .section-5 .cards .card .icon img {
+        top: 12px;
+        left: 8px;
+    }
+    .section-5 .cards .card .text h2 {
+        font-size: 23px;
+        line-height: 30px;
+    }
+    .section-5 .cards .card .text p {
+        font-size: 18px;
+        line-height: 26px;
+    }
+
+    .section-6 {
+        padding: 5% 3%;
+    }
+    .section-6 .group .icon {
+        width: 70px;
+        height: 70px;
+    }
+    .section-6 .group .icon img {
+        top: 19%;
+        left: 19%;
+    }
+    .section-6 .group .number h3 {
+        font-size: 40px;
+        line-height: 57px;
+    }
+    .section-6 .group .name h3 {
+        font-size: 32px;
+        line-height: 44px;
+    }
+
+    .section-7 {
+        padding: 2% 5%;
+    }
+    .section-7 .clients .client {
+        margin: 0 1%;
+        background-position: 70% 87%;
+    }
+    .section-7 .clients .client .info {
+        margin: 5% 2%;
+    }
+    .section-7 .clients .client .info .img img {
+        width: 65px;
+        height: 65px;
+    }
+    .section-7 .clients .client .info .name h3 {
+        font-size: 14px;
+        line-height: 22px;
+        letter-spacing: 0.01em;
+        padding: 4% 0;
+    }
+    .section-7 .clients .client .info .name h2 {
+        font-size: 18px;
+        line-height: 24px;
+    }
+    .section-7 .clients .client .text {
+        margin: 10% 8%;
+    }
+    .section-7 .clients .client .text p {
+        font-size: 18px;
+    }
+
+    .section-8 p {
+        font-size: 19px;
+        letter-spacing: 0.06em;
+    }
+    .section-8 h2 {
+        font-size: 41px;
+        line-height: 40px;
+    }
+    .section-8 form {
+        width: 70%;
+    }
+    .section-8 form label {
+        font-size: 22px;
+        line-height: 30px;
+    }
+    .section-8 form input::placeholder, .section-8 textarea {
+        font-size: 20px;
+        line-height: 20px;
+    }
+    .section-8 form button, .section-8 form button a {
+        width: 27%;
+        height: 47px;
+    }
+    footer p {
+        font-size: 18px;
+        line-height: 40px;
+    }
+}
